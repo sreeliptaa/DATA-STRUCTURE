@@ -37,6 +37,13 @@ public class MyLinkedList {
         }
     }
 
+    // method for insert the element in between two nodes
+    public void insert(INode myNode, INode newNode) {
+        INode tempNode = myNode.getNext();
+        myNode.setNext(newNode);
+        newNode.setNext(tempNode);
+    }
+
     //method for displaying output
     public void printMyNodes() {
         StringBuilder myNodes = new StringBuilder("My Nodes : ");
