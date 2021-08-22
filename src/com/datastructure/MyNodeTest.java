@@ -22,4 +22,3 @@ public class MyNodeTest {
         System.out.println(result);
     }
 }
-
