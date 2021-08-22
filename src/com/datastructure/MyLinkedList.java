@@ -44,6 +44,12 @@ public class MyLinkedList {
         newNode.setNext(tempNode);
     }
 
+    // method for delete the first node
+    public void pop() {
+        INode tempNode = this.head;
+        this.head = head.getNext();
+    }
+
     //method for displaying output
     public void printMyNodes() {
         StringBuilder myNodes = new StringBuilder("My Nodes : ");
