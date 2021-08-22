@@ -50,6 +50,17 @@ public class MyLinkedList {
         this.head = head.getNext();
     }
 
+    // method for delete the last node
+    public void popLast() {
+        INode tempNode = head;
+        while (!tempNode.getNext().equals(tail)) {
+            tempNode = tempNode.getNext();
+        }
+        this.tail=tempNode;
+        tempNode.setNext(null);
+    }
+
+
     //method for displaying output
     public void printMyNodes() {
         StringBuilder myNodes = new StringBuilder("My Nodes : ");
