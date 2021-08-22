@@ -60,6 +60,18 @@ public class MyLinkedList {
         tempNode.setNext(null);
     }
 
+    // method for searching position of a node element in the list
+    public void searchMyNode() {
+        INode tempNode = head;
+        int position = 0;
+        while (tempNode != null) {
+            position++;
+            if (tempNode.getKey().equals(30)) {
+                System.out.println("Your Node With Key value 30 is present at " +position+ " in the list");
+            }
+            tempNode = tempNode.getNext();
+        }
+    }
 
     //method for displaying output
     public void printMyNodes() {
